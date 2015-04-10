@@ -6,40 +6,43 @@ html {
 	background-size: cover;
 	body {
 		.container {
+			.inner-container {
+	  			max-width: 800px;
+	  			margin: 0 auto;
+	  		}
+	  		
 			nav {
 				position: fixed;
 				width: 100%;
 				text-align: center;
 				.-col3 {
-					padding: 10px;
-					a:link {
+					padding: 25px;
+					a, a:link, a:visited {
 						color: #fff;
 					}
 				}
 			}
-			.inner-container {
-	  			max-width: 800px;
-	  			margin: 0 auto;
-	  			.hero-container {
-	  				height: 100%;
-	  				width: 100%;
-		  			.hero {
-		  				position: relative;
-		  				top: 50%;
-		  				transform: translateY(-50%);
-		  				text-align: center;
-		  				h1 {
-		  					color: #fff;
-		  					font-weight: 600;
-		  					margin-bottom: 0;
-		  					letter-spacing: 5px;
-		  				}
-		  				h2 {
-		  					color: #fff;
-		  				}
-		  			}
-		  		}
+			
+  			.hero-container {
+  				height: 100%;
+  				width: 100%;
+	  			.hero {
+	  				position: relative;
+	  				top: 50%;
+	  				transform: translateY(-50%);
+	  				text-align: center;
+	  				h1 {
+	  					color: #fff;
+	  					font-weight: 600;
+	  					margin-bottom: 0;
+	  					letter-spacing: 5px;
+	  				}
+	  				h2 {
+	  					color: #fff;
+	  				}
+	  			}
 	  		}
+	  		
 	  	}
 	}
 }
