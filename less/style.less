@@ -1,3 +1,6 @@
+@import '../jam/less/base/variables.less';
+@import '../jam/less/base/mixins.less';
+
 html { 
 	background: url('../images/bg.jpeg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
@@ -10,7 +13,7 @@ html {
 	  			max-width: 800px;
 	  			margin: 0 auto;
 	  		}
-	  		
+
 			nav {
 				position: fixed;
 				width: 100%;
@@ -40,9 +43,21 @@ html {
 	  				h2 {
 	  					color: #fff;
 	  				}
+	  				.logos {
+	  					margin-top: 50px;
+	  					img {
+	  						height: 50px;
+	  					}
+	  				}
 	  			}
 	  		}
 	  		
+	  		section {
+	  			padding: 150px 0;
+	  			&#about {
+	  				background: @backgroundColor-grayLight;
+	  			}
+	  		}
 	  	}
 	}
 }
