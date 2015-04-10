@@ -36,12 +36,12 @@ html {
 	  				text-align: center;
 	  				h1 {
 	  					color: #fff;
-	  					font-weight: 600;
 	  					margin-bottom: 0;
-	  					letter-spacing: 5px;
+	  					letter-spacing: -2px;
 	  				}
 	  				h2 {
 	  					color: #fff;
+	  					font-weight: 300;
 	  				}
 	  				.logos {
 	  					margin-top: 50px;
@@ -55,7 +55,11 @@ html {
 	  		section {
 	  			padding: 150px 0;
 	  			&#about {
-	  				background: @backgroundColor-grayLight;
+	  				background: @color-red;
+	  				color: @color-white;
+	  				h2 {
+	  					color: @color-white;
+	  				}
 	  			}
 	  		}
 	  	}
