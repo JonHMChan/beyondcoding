@@ -1,0 +1,3 @@
+[submodule "jam"]
+	path = jam
+	url = https://github.com/StackExchange/jam.git
