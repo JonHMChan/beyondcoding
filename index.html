@@ -248,12 +248,12 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script>
 			$(document).ready(function() {
-				$(window).scroll(function(event) {
-					var top = $(this).scrollTop();
-					if (top > $(window).height()) {
-						$("nav").css("background", "rgba(0,0,0,0.75);")
+				$(window).scroll(function() {
+					var top = $(window).scrollTop();
+					if (top > ($(".hero-container").height() - $("nav").height())) {
+						$("nav").css("background", "rgba(0,0,0,0.75)")
 					} else {
-						$("nav").css("background", "none")
+						$("nav").css("background", "rgba(0,0,0,0)")
 					}
 				})
 			})
