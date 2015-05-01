@@ -45,7 +45,7 @@
 				<a name="about"></a>
 				<div class="inner-container">
 					<h2>About Us</h2>
-					<p>Introducing Beyond Coding, a <strong>free</strong> 10-week summer program that gives emerging computer programmers in New York City the professional skills needed to help them succeed in their first job working with code. This program is open to anybody in the New York City area who has experience and knowledge of programming, is currently looking for a job as a software developer or a related role, and who does not have access to tools, resources, or a professional network to lean upon for support. </p>
+					<p>Introducing <em>Beyond Coding</em>, a <strong>free</strong> 10-week summer program that gives emerging computer programmers in New York City the professional skills needed to help them succeed in their first job working with code. This program is open to anybody in the New York City area who has experience and knowledge of programming, is currently looking for a job as a software developer or a related role, and who does not have access to tools, resources, or a professional network to lean upon for support. </p>
 					<p>Learn More</p>
 				</div>
 			</section>
@@ -237,9 +237,6 @@
 							<p>Participation is required to 5 out of 6 events; active participation will organically allow students to build relationships with <em>Beyond Coding</em> organizers and create opportunities for direct introductions to employers at the end of term hiring fair.</p>
 						</li>
 						<li>
-							<p><strong>How were the students selected?</strong></p>
-						</li>
-						<li>
 							<p><strong>How much does it cost to attend the hiring fair?</strong></p>
 							<p>It’s free for employers to participate in the “end of term” hiring fair. For more information on how to participate as an employer, contact <a href="mailto:employers@beyondcoding.io">employers@beyondcoding.io</a>.</p>
 						</li>
@@ -248,5 +245,18 @@
 				</div>
 			</section>
 		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$(window).scroll(function(event) {
+					var top = $(this).scrollTop();
+					if (top > $(window).height()) {
+						$("nav").css("background", "rgba(0,0,0,0.75);")
+					} else {
+						$("nav").css("background", "none")
+					}
+				})
+			})
+		</script>
 	</body>
 </html>
